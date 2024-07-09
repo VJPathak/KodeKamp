@@ -12,8 +12,13 @@
       var message = document.forms["stripe-login"]["message"].value;
       
       // Name validation
+      var namePattern = /^[a-zA-Z\s]{3,}$/;
+
       if (name == "") {
         alert("Name must be filled out");
+        return false;
+      } else if (!namePattern.test(name)) {
+        alert("Please enter valid Name");
         return false;
       }
       
