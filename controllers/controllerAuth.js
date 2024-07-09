@@ -1,6 +1,6 @@
 const admin = require('firebase-admin');
 
-const serviceAccount = process.env.SEC;
+const serviceAccount = require("../SEC.json");
 
 //initializing our secret key
 admin.initializeApp({
