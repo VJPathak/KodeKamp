@@ -18,7 +18,9 @@
       }
       
       // Email validation
-      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      //var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      var emailPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+
       if (email == "") {
         alert("Email must be filled out");
         return false;
